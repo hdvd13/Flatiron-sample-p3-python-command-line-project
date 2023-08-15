@@ -1,2 +1,5 @@
-# Flatiron-sample-p3-python-command-line-project
+
+#   Flatiron-sample-p3-python-command-line-project
 A python command line project - Flatiron phase 3
+
+- [Notes](./notes/notes.md)
