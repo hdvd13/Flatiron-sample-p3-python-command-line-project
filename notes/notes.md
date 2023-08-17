@@ -103,3 +103,174 @@ House window shopping App, for user to go and look at house they like and save t
 - Deciding how the data works with the join table
 
 ### Idea 2
+
+  Car
+
+ Main idea
+  Car window shopping App, for user to go and look at Car they like and save them to a list of favorites
+
+ User story
+ Users will look House
+
+ Main idea
+  House window shopping App, for user to go and look at house they like and save them to a list of favorites
+
+ User story
+  Users will look at a list of House and details
+  Users will save a House to their favorites
+  Users can see 1 House
+  Users can see their list of favorites
+  Users can remove a House from their favorites
+ How I will use the concepts I recently learned to meet the project requirements
+ Object Oriented Python
+
+ Class for House with attributes
+
+ Class for User with attributes
+
+ Database Tables
+
+ Describe how you will use SQLAlchemy to create and interact with 2 or more related database tables
+
+ Table: Users
+
+ id
+ email
+ Table: Houses
+
+ id
+ address
+ bedrooms
+ bathrooms
+ Table: (many to many) User-Houses == "List of Favourite Houses"
+
+ id
+ house id
+ user who favorites it id
+ Object Relationships
+
+Describe the types of relationships your different classes and tables will have with each other
+
+User can have many favorite houses
+
+House can be favorited by many users
+
+Users to houses = many-to-many
+
+with join table user-liked-houses
+Aggregate and Association Methods
+
+CRUD
+
+Create
+
+Create a list of liked houses
+Read
+
+Read All
+
+Display all houses
+Display liked houses for user
+Read 1
+
+Display 1 house by ID
+Update
+
+Remove house from list of liked houses
+Delete
+
+Use of Data Structures
+
+Describe how you plan on using data structures like lists and dictionaries in your project
+
+Single Source of Truth
+
+LIST: User could have a list of houses as ID's
+
+? is this the join table
+DICTIONARY: House has set of attributes and values
+
+What area I think will be most challenging
+Describe which aspect of the project you think will present the greatest challenge, or the topic that you feel least familiar with at present.
+
+Deciding how the data works with the join tableat a list of Car and details
+Users will save a Car to their favorites
+Users can see 1 Car
+Users can see their list of favorites
+Users can remove a Car from their favorites
+How I will use the concepts I recently learned to meet the project requirements
+Object Oriented Python
+
+Class for Car with attributes
+
+Class for User with attributes
+
+Database Tables
+
+Describe how you will use SQLAlchemy to create and interact with 2 or more related database tables
+
+Table: Users
+
+id
+email
+Table: Cars
+
+id
+year
+make
+model
+color
+
+Table: (many to many) User-Cars == "List of Favourite Cars"
+
+id
+Car id
+user who favorites it id
+Object Relationships
+
+Describe the types of relationships your different classes and tables will have with each other
+
+User can have many favorite Cars
+
+Car can be favorited by many users
+
+Users to Cars = many-to-many
+
+with join table user-liked-Cars
+Aggregate and Association Methods
+
+CRUD
+
+Create
+
+Create a list of liked Cars
+Read
+
+Read All
+
+Display all Cars
+Display liked Cars for user
+Read 1
+
+Display 1 Car by ID
+Update
+
+Remove Car from list of liked Cars
+Delete
+
+Use of Data Structures
+
+Describe how you plan on using data structures like lists and dictionaries in your project
+
+Single Source of Truth
+
+LIST: User could have a list of Cars as ID's
+
+? is this the join table
+DICTIONARY: Car has set of attributes and values
+
+What area I think will be most challenging
+Describe which aspect of the project you think will present the greatest challenge, or the topic that you feel least familiar with at present.
+
+Deciding how the data works with the join table
+
