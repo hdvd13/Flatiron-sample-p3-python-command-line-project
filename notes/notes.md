@@ -3,7 +3,12 @@
 ## Project Requirement
 
 
--  [Phase 3 Project Requirements](https://my.learn.co/courses/653/pages/phase-3-project-cli?module_item_id=95439)
+- [Phase 3 Project Requirements](https://my.learn.co/courses/653/pages/phase-3-project-cli?module_item_id=95439)
+
+## TO DO LIST
+
+ - [ ]
+
 
 ### the minimum requirements
 *  
@@ -273,4 +278,31 @@ What area I think will be most challenging
 Describe which aspect of the project you think will present the greatest challenge, or the topic that you feel least familiar with at present.
 
 Deciding how the data works with the join table
+
+## Database Design
+
+
+###  Database Tables 
+
+
+#### Users
+many to many relationship Houses
+
+   - ID: INTEGER NOT NULL PRIMARY KEY AUTO INCREMENT
+   - email: STRING NOT NULL UNIQUE
+
+#### Houses
+many to many relationship Users
+
+   - ID: INTEGER NOT NULL PRIMARY KEY AUTO INCREMENT
+   - address: STRING NOT NULL UNIQUE
+   - bedrooms: INTEGER NOT NULL
+   - bathrooms: FLOAT NOT NULL
+
+#### Users liked Houses (join table)
+
+   - ID: INTEGER NOT NULL PRIMARY KEY AUTO INCREMENT
+   - house ID : INTEGER NOT NULL 
+   - user who liked  it ID : INTEGER NOT NULL
+
 
